@@ -6,8 +6,8 @@ import { CardService } from './cardService'
 const ServiceBarber = () => {
   return (
     <section>
-        <div className='px-8 flex items-center justify-between py-10'>
-        <div className=' flex flex-col space-y-4 w-1/4'>
+        <div className='px-8 flex items-center flex-wrap justify-between md:space-y-0 space-y-4 py-10'>
+        <div className=' flex flex-col space-y-4 md:w-1/4'>
             <h1 className='text-3xl leading-8 font-bold uppercase'>
                 Your personal  Barber Service at your home
             </h1>
@@ -17,8 +17,8 @@ const ServiceBarber = () => {
            
         </div>
         <div className='relative flex items-center'>
-        <div className='relative w-[400px] h-[400px] '>
-            <Image src={barber_2} alt='barber' className='object-cover w-[400px] h-[400px]'/> 
+        <div className='relative md:w-[400px] h-[400px] '>
+            <Image src={barber_2} alt='barber' className='object-cover md:w-[400px] h-[400px]'/> 
         </div>
         <div className='flex flex-col w-24 p-2 rounded-bl-2xl uppercase bg-white text-black absolute top-0 right-0'>
             <span className='text-xl font-bold'>10 +</span>

@@ -6,8 +6,8 @@ import { Facebook, Instagram, Twitter,Linkedin,Youtube } from 'lucide-react';
 
 const Homepage = () => {
   return (
-    <section id='home' className='w-full my-32 flex items-center px-8 text-white justify-between'>
-        <div className='flex flex-col gap-4 w-2/5'>
+    <section id='home' className='w-full md:my-32 my-12 flex items-center flex-wrap px-8 text-white justify-between'>
+        <div className='flex flex-col gap-4 md:w-2/5'>
             <h1 className='text-4xl font-bold  uppercase'>
                 The ultimate <br></br> Convenience <br></br> for busy people
             </h1>
@@ -44,12 +44,12 @@ const Homepage = () => {
                </div>
             </div>
         </div>
-        <div className='relative flex md:-mt-20'>
-        <div className='relative rounded-3xl z-50 w-[300px] h-[200px] '>
-            <Image src={barber_2} alt={'barber'} className='rounded-4xl p-4 w-[300px] h-[200px] object-cover'/>
+        <div className='relative md:flex hidden md:-mt-20'>
+        <div className='relative rounded-3xl z-50 md:w-[300px] h-[200px] '>
+            <Image src={barber_2} alt={'barber'} className='rounded-4xl p-4 md:w-[300px] h-[200px] object-cover'/>
         </div>
         <div className='absolute top-20 -right-8  rounded-3xl  w-[300px] h-[200px]'>
-            <Image src={barber_1} alt={'barber'} className='rounded-4xl p-4 w-[300px] h-[200px] object-cover'/>
+            <Image src={barber_1} alt={'barber'} className='rounded-4xl p-4 md:w-[300px] h-[200px] object-cover'/>
         </div>
         </div>
     </section>

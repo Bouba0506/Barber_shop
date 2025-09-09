@@ -8,8 +8,8 @@ import { SliderImage } from './sliderImage'
 export const CardService = () => {
   return (
     <div className='my-10 mx-auto'>
-        <div className='flex flex-col items-center w-full bg-white text-black py-10'>
-            <div className='flex flex-col items-center w-2/5 mx-auto justify-center space-y-4'>
+        <div className='flex flex-col items-center flex-wrap w-full bg-white text-black py-10'>
+            <div className='flex flex-col items-center md:w-2/5 mx-auto justify-center space-y-4'>
             <h1 className='text-3xl font-bold uppercase'>
                 Browse our services
             </h1>
@@ -17,11 +17,11 @@ export const CardService = () => {
             Need a service? We have a wide range of services to suit your needs. From haircuts to hair coloring, we have something for everyone.
             </p>
         </div>
-        <div className='w-full grid grid-cols-2 gap-8 mt-8'>
+        <div className='w-full grid md:grid-cols-2 grid-cols-1 gap-8 mt-8'>
             {cardlist.map((items,index)=>
                 <div key={index} className='flex items-center mx-auto gap-8 w-80 my-4'>
                     <div className='relative w-28 h-20'>
-                        <Image src={items.image} alt='barber' className='object-cover w-20 h-20'/>
+                        <Image src={items.image} alt='barber' className='object-cover md:w-20 h-20'/>
                     </div>
                     <div className='flex flex-col space-y-2'>
                         <h1 className='text-xl font-bold uppercase'>{items.title}</h1>
