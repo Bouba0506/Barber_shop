@@ -18,9 +18,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-between items-center px-8">
-      <span className="text-2xl font-bold">Barber</span>
+    <div className="w-full flex justify-between gap-20 items-center px-4">
+       <span className="text-2xl md:hidden flex font-bold">Barber</span>
       <div className="w-full px-8 py-4 md:flex hidden items-center justify-between">
+      <span className="text-2xl font-bold">Barber</span>
         <div className="flex items-center space-x-6 cursor-pointer">
           {navlinks.map((link, index) => {
             return (
@@ -43,7 +44,7 @@ const Navbar = () => {
       </div>
       <div
         onClick={toggleNavbar}
-        className="md:hidden flex bg-black cursor-pointer"
+        className="md:hidden flex justify-end items-end bg-black cursor-pointer"
       >
         {isOpen ? <X size={25} /> : <AlignLeft size={25} />}
       </div>
